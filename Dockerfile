@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.7
 
 RUN apk add --update ca-certificates postfix postfix-pcre postfix-policyd-spf-perl rsyslog &&\
     rm -rf /var/cache/apk/* 
