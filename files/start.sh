@@ -2,6 +2,7 @@
 rsyslogd
 rm /etc/aliases* /etc/postfix/transport*
 cp /defaults/*.cf /etc/postfix/
+/configuration/users.sh
 cp /configuration/aliases /etc/aliases
 sed -i "s/SERVICENAME/${SERVICENAME}/g" /etc/postfix/main.cf
 sed -i "s/DESTINATION/${DESTINATION}/g" /etc/postfix/main.cf
