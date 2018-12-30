@@ -4,6 +4,7 @@ rm /etc/aliases* /etc/postfix/transport*
 cp /defaults/*.cf /etc/postfix/
 cp /configuration/aliases /etc/aliases
 sed -i "s/SERVICENAME/${SERVICENAME}/g" /etc/postfix/main.cf
+sed -i "s/DESTINATION/${DESTINATION}/g" /etc/postfix/main.cf
 echo -e $MYNETWORKS >> /etc/postfix/main.cf
 postalias /etc/aliases
 /usr/sbin/postfix -c /etc/postfix start
