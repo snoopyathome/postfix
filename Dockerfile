@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.10
 
 COPY files/defaults/ /defaults/
 COPY files/start.sh /start.sh
