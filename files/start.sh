@@ -9,4 +9,4 @@ sed -i "s/DESTINATION/${DESTINATION}/g" /etc/postfix/main.cf
 echo -e $MYNETWORKS >> /etc/postfix/main.cf
 postalias /etc/aliases
 /usr/sbin/postfix -c /etc/postfix start
-tail -F /var/log/maillog
+tail -F /var/log/mail.log
