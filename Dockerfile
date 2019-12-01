@@ -1,6 +1,5 @@
 FROM alpine:3.10
 
-COPY files/defaults/ /defaults/
 COPY files/start.sh /start.sh
 
 RUN apk add --update ca-certificates postfix postfix-pcre postfix-policyd-spf-perl rsyslog &&\
